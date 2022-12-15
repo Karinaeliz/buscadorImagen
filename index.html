@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="assest/paisajes.jpg" alt="paisaje de montañas" class="slider__img">
+                <div class="slider__content">
+                    <h2>Buscador de Imágenes Pixabay</h2>
+                </div>
+               
+            </div>
+            <div class="slider__section">
+                <img src="assest/car.jpg" alt="auto" class="slider__img">
+                <div class="slider__content">
+                    <h2>Banco de imágenes gratuita </h2>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="assest/deporte.jpg" alt="deporte" class="slider__img">
+                <div class="slider__content">
+                    <h2>Coloca en el casillero busqueda término que desees buscar </h2>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="assest/mascotas.jpg" alt="perro labrador" class="slider__img">
+                <div class="slider__content">
+                    <h2>Presiona Buscar Imágenes y listo </h2>
+                </div>
+            </div>
+        </div>
+        <div class="slider__btn slider__btn-right" id="btn-right">&#62</div>
+        <div class="slider__btn slider__btn-left" id="btn-left">&#60</div>
+    </div>
+    <div class="buscador">
+        <form id="formulario" class="">
+            <div>
+                <label >Término de Búsqueda</label>
+                <input type="text" placeholder="Término de búsqueda. Ejemplo: auto o paisaje" id="termino">
+                <input type="submit" value="Buscar Imágenes" class="btn_imagen">
+            </div>
+        </form>
+    </div>
+    <div id="resultado" ></div>
+
+    <div id="paginacion" class="container mx-auto mb-10 text-center flex flex-wrap mx-auto justify-center">
+
+    </div>
+
+    <script src="js/slider.js"></script>
+    <script src="js/busqueda.js"></script>
+    
+</body>
+</html>

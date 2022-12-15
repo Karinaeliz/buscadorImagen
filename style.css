@@ -1,0 +1,184 @@
+@import url(' https://fonts.cdnfonts.com/css/chalet-newyork ' ); 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Chalet NewYork' , sans-serif ;
+}
+img{
+    display: block;
+    width: 100%;
+}
+/*Style Slider*/
+.container-slider{
+   
+    position: relative;
+    overflow: hidden;    
+}
+.slider{
+    display: flex;
+    width: 400%;
+    height: 350px;
+    margin-left: -100%;
+    position: relative;
+    
+}
+.slider::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(69, 81, 83, 0.5);
+    height: 100%;
+}
+.slider__section{
+    width: 100%;
+    position: relative;
+}
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+.slider__btn:hover {
+    background: #fff;
+    
+}
+.slider__btn-left {
+    left: 10px;
+}
+.slider__btn-right{
+    right: 10px;
+}
+.slider__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+    letter-spacing: 4px;
+    z-index: 999;
+    
+}
+.slider__title{
+    font-size: 2.2em;
+    margin: 0;
+}
+.slider__txt{
+    margin: 5px 0;
+}
+/* formulario */
+#formulario{
+    margin-top: 60px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#termino{
+    border-radius: 8px;
+    width: 350px;
+    height: 40px;
+    font-size: 1rem;
+    text-align: center;
+}
+.btn_imagen{
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.existe_alerta{
+    border: red 400px;
+    color: red;
+    font-size: 700;
+    text-align: center;
+}
+
+.aler{
+    font-weight: bold;
+    font-size: 1rem;
+    
+}
+.mensaje{
+    display: inline-block;
+    font-size: 1rem;
+    
+}
+/*resultados*/
+#resultado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+.container_img{
+    border: 2px solid rgb(68, 157, 163);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+.imagenes{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.caracteristica p{
+    font-weight: bold;
+
+}
+span{
+    font-weight: lighter;
+    margin-left: 15px;
+}
+a{
+    display: block;
+    width: 100%;
+    background: rgb(68, 157, 163);
+    color: #fff;
+    letter-spacing: 5px;
+    
+}
+.siguiente{
+    background:  rgb(68, 157, 163);
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
